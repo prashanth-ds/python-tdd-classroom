@@ -1,4 +1,3 @@
-
 import unittest
 from src.string_exercise import StringExercise
 
@@ -46,7 +45,12 @@ class TestExercise(unittest.TestCase):
         text = "Three tomatoes are walking down the street"
         expected = [5, 8, 3, 7, 4, 3, 6]
         actual = self.string_exercise.get_word_lengths(text)
-        self.assertEqual(expected, actual) 
+        self.assertEqual(expected, actual)
 
     def tearDown(self):
-        pass   # If needed, do final unstubbing/unmocking here, like calling unittest.unstub()
+        del self.string_exercise
+
+
+if __name__ == "__main__":
+    unittest.main()
+

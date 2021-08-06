@@ -1,3 +1,4 @@
+
 class StringExercise:
 
     def __init__(self):
